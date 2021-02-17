@@ -20,6 +20,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                     .antMatchers(HttpMethod.GET, "/vehicles/**").authenticated()
                     .antMatchers(HttpMethod.DELETE, "/vehicles/**").hasRole("ADMIN")
                     .anyRequest().denyAll();
-        
+
     }
 }
