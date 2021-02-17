@@ -27,6 +27,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                     .authorizeRequests()
                     .antMatchers("/auth/signin").permitAll()
+                    .antMatchers("/me").permitAll()
                     .antMatchers(HttpMethod.GET, "/vehicles/**").authenticated()
                     .antMatchers(HttpMethod.DELETE, "/vehicles/**").hasRole("ADMIN")
                     .anyRequest().denyAll()
