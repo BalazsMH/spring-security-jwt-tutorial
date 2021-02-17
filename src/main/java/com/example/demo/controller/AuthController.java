@@ -2,7 +2,7 @@ package com.example.demo.controller;
 
 import com.example.demo.repository.UserRepository;
 import com.example.demo.security.JwtTokenServices;
-import org.springframework.data.authentication.UserCredentials;
+import com.example.demo.model.UserCredentials;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
